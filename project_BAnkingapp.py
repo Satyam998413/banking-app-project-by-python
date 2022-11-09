@@ -4,17 +4,17 @@
 # write the transaction to a python file
 # while True:
 #     input()
-#     classes
+#     classes65645455
 #     meth_____open()==file operate
 #     properties
 class Bank:
 
-    def __init__(self,initial_amount=0.00):
+    def __init__(self,initial_amount=0.00):#fdgbfxvdsfvgthfgdfgbt
         self.balance=initial_amount
 
-    def log_transaction(self,transaction_string):
+    def log_transaction(self,transaction_string):#egtfgvdxgjgh
         with open("transaction.txt","a") as file:
-            file.write(f"{transaction_string} \t\tBalace: {self.balance} \n\t")
+            file.write(f"{transaction_string} \t\tBalace: {self.balance} \n\t")#dgthfgrdryhyfjhffhg
 
     def withdrwal(self,amount):
         try:
