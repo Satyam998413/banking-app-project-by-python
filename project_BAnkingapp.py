@@ -15,10 +15,14 @@ class Bank:
 
     def __init__(self,initial_amount=0.00):
         self.balance=initial_amount#main5
+        # hello1
+        # hello2
+        # hello3
+        # hello4
 
-    def log_transaction(self,transaction_string):#egtfgvdxgjgh
+    def log_transaction(self,transaction_string):
         with open("transaction.txt","a") as file:
-            file.write(f"{transaction_string} \t\tBalace: {self.balance} \n\t")#dgthfgrdryhyfjhffhg
+            file.write(f"{transaction_string} \t\tBalace: {self.balance} \n\t")
 
     def withdrwal(self,amount):
         try:
