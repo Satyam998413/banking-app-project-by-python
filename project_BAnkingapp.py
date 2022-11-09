@@ -8,9 +8,13 @@
 #     meth_____open()==file operate
 #     properties
 class Bank:
+    # main1
+    # main2
+    # main3
+    # main4
 
     def __init__(self,initial_amount=0.00):
-        self.balance=initial_amount
+        self.balance=initial_amount#main5
 
     def log_transaction(self,transaction_string):#egtfgvdxgjgh
         with open("transaction.txt","a") as file:
