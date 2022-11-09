@@ -9,7 +9,7 @@
 #     properties
 class Bank:
 
-    def __init__(self,initial_amount=0.00):#fdgbfxvdsfvgthfgdfgbt
+    def __init__(self,initial_amount=0.00):
         self.balance=initial_amount
 
     def log_transaction(self,transaction_string):#egtfgvdxgjgh
@@ -21,16 +21,11 @@ class Bank:
             amount=float(amount)
         except ValueError:
             amount=0
-        if amount:
-            self.balance=self.balance-amount
-            self.log_transaction(f"Withdrew {amount}")
-
-    def deposite(self,amount):
-        try:
-            amount=float(amount)
-        except ValueError:
-            amount=0
-        if amount:
+        # if amount:
+        #     self.balance=self.balance-amount
+        #     self.log_transaction(f"Withdrew {amount}")
+# fdesdfhnjgfddgrthnm,jh
+  
             self.balance=self.balance+amount
             self.log_transaction(f"Deposited {amount}")
 
@@ -44,12 +39,5 @@ while True:
     if action in ["withdrawal","deposite"]:
         if action is "withdrawal":
             amount=input("How much amount to take out ?")
-            account.withdrawal(amount)
-        else:
-            amount=input("How much amount to put in ?")
-            account.deposite(amount)
-
-        print("Your Balance:\t",account.balance)
-    else:
-        print("That is not a valid action.Try again")
+      
 
